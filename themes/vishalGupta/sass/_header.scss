@@ -1,0 +1,107 @@
+.banner {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	video{
+		min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+	&__down{
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		position: absolute;
+		bottom: 20px;
+		left: calc( 50vw - 25px );
+		padding: 15px 0 0 3px;
+		background: url('images/down-arrow.png') no-repeat;
+		cursor: pointer;
+
+	}
+}
+.banner__text{
+	width: 100%;
+	position: absolute;
+	top: calc(50vh - 100px);
+	left: 0;
+	text-align: center;
+	color: #fff;
+	h2 {
+		font-size: 100px;
+		text-shadow: 4px 4px 16px #000;
+	}
+	&__tag{
+		font-size: 28px;
+		text-shadow: 2px 2px 8px #000;
+	}
+	&__cta{
+		margin-top: 50px;
+		&--first{
+			display: inline-block;
+			margin-right: 50px;
+			a {
+					@include cta-with-hover(#fff);	
+				}
+			}
+		&--second{
+			display: inline-block;
+			a {
+					@include cta-with-hover(#fff);	
+				}
+				
+			}
+	}
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	padding: 10px 20px;
+	background: transparent;
+	top:0;
+	left:0;
+	z-index: 99999;
+	transition: all 0.3s linear;
+	h1{
+		float: left;
+		a {
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 28px;
+		img{
+			width: 50px;
+			margin-right: 12px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	} 
+	nav {
+		float: right;
+		vertical-align: top;
+		ul li{
+			margin-top: 10px;
+			display: inline-block;
+			margin-right: 20px;
+			a{
+				color: #fff;
+				text-decoration: none;
+
+			}
+			&:nth-last-of-type(1){
+				margin-right: 0;
+			}
+		}
+	}
+}

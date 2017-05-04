@@ -1,0 +1,29 @@
+@mixin transition($value) {
+	transition: $value;
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+}
+
+
+@mixin cta-with-hover($ccolor) {
+	padding: 10px 20px;
+	border: 2px solid $ccolor;
+	border-radius: 5px;
+	display: inline-block;
+	background: transparent;
+	color: $ccolor;
+	font-size: 18px;
+	text-decoration: none;	
+	text-shadow: 4px 4px 16px #000;
+	text-transform: uppercase;	//@include transition(all 0.3s linear);
+	transition: all 0.3s linear;
+	
+	&:hover{
+		background: $ccolor;
+		color: #0F3956;
+		text-shadow: 0px 0px 0px transparent;
+	}
+
+}
+

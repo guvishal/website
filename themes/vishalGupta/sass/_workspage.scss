@@ -1,0 +1,46 @@
+.page-template-work-page {
+	.content-wrapper{
+		width: 94%;
+		max-width: 1024px;
+		margin: 50px auto 100px;
+	.works{
+		.work{
+			width: calc(25% - 12px);
+			padding: 10px;
+			border: 1px solid #ccc;
+
+			h3 a {
+				margin: 10px 0 15px;
+				display: inline-block;
+				font-size: 24px;
+				line-height: 30px;
+				color: #333;
+				text-decoration: none;
+				transition: all 0.3s linear;
+				&:hover{
+					color: #2098D1;
+				}
+			}
+			.work-detail{
+				font-size: 16px;
+				line-height: 20px;
+				color: #333;
+			}
+			.readmore{
+				display: inline-block;
+				margin: 20px 0 20px;
+				padding: 8px 16px 10px;
+				text-decoration: none;
+				color: #2098D1;
+				border: 2px solid #2098D1;
+				border-radius: 5px;
+				transition: all 0.3s linear;
+				&:hover{
+					color:#fff;
+					background: #2098D1;
+				}
+			}
+		}
+	}
+	}
+}
